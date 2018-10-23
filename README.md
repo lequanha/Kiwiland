@@ -127,3 +127,4 @@ I apply TestSuite and there are 5 tests to find the distance of specific routes.
 6.	The Get Number of Possible Trip Test
 The source code is \Kiwiland\tests\gettripsnumbermodule.py
 I apply TestSuite and there are 9 tests to find the number of possible trips from a departure_city to a destination_city.
+
