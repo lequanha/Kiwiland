@@ -2,7 +2,7 @@ import unittest
 from src.railroad import Railroad
 from tests import Kiwiland
 
-class InsightGlobalTest(unittest.TestCase):
+class ReceptivitiTest(unittest.TestCase):
     def setUp(self):
         self.railroad = Kiwiland
 
