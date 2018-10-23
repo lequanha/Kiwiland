@@ -148,7 +148,7 @@ Step 7.	End Loop when you already visited all the visit_nodes  set and you have 
 The source code is \Kiwiland\src\railroad.py
 
 
-3.	The Insight Global Test.
+3.	The Receptiviti Test.
 
 The source code is \Kiwiland\tests\test_receptiviti.py
 
