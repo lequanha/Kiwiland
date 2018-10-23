@@ -8,7 +8,9 @@ A.	How to setup
 https://github.com/lequanha/Kiwiland
 
 The AMI that I used to deploy my CentOS ec2 instance is 
+
 CentOS-7-x86_64-EBS-HVM-20180318_121109-877e76fd-a132-410c-9982-c70ca8e41d88-ami-f5cb0388.4 (ami-7d579d00)
+
 From the above AMI, I installed Python 3.7 for CentOS 7.5, the steps please refer to the file inside my GITHUB:    Python3forCentOS.txt
 
 You can use the MS Word and PDF files inside this package to see all the screenshots
