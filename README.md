@@ -17,12 +17,12 @@ B.	How to deploy
 •	From inside your putty session, please make a GIT CLONE
 git clone https://github.com/lequanha/Kiwiland.git
 
-This creenshot is inside QuanHaLe_documentation.doc and QuanHaLe_documentation.pdf
+This screenshot is inside QuanHaLe_documentation.doc and QuanHaLe_documentation.pdf
  
 •	Please use this statement to list the content
 ls -LRl
 
-This creenshot is inside QuanHaLe_documentation.doc and QuanHaLe_documentation.pdf
+This screenshot is inside QuanHaLe_documentation.doc and QuanHaLe_documentation.pdf
 
 •	Please use the available MS Word and/or PDF files for your guidelines
 QuanHaLe_documentation.doc
@@ -32,7 +32,9 @@ C.	How to execute
 To run the 10 tests provided by Receptivti, please execute
 cd Kiwiland
 python3.7 -m unittest
-######################################################
+
+The CentOS console will show 
+
 The route A-B-C has the distance of 9.0
 .
 The route A-D has the distance of 5.0
@@ -57,9 +59,9 @@ The number of possible trips from C to C with maximum distance of 30 are: 7
 Ran 10 tests in 0.002s
 
 OK
-######################################################
 
-This creenshot is inside QuanHaLe_documentation.doc and QuanHaLe_documentation.pdf 
+
+This screenshot is inside QuanHaLe_documentation.doc and QuanHaLe_documentation.pdf 
 
 The default test set’s outputs above are the tests required by Receptiviti company.
 To run interactively, execute `python3.7 -i` in the ‘Kiwiland' directory.  You can then enter below commands
@@ -76,7 +78,7 @@ my_routes.get_shortest_distance("A", "C")
 my_routes.get_shortest_distance("B", "B")
 my_routes.get_number_of_possible_trips_to_maximum_distance("C", "C", 30)
 
-This creenshot is inside QuanHaLe_documentation.doc and QuanHaLe_documentation.pdf 
+This screenshot is inside QuanHaLe_documentation.doc and QuanHaLe_documentation.pdf 
  
 Other unit tests that I have also set up
 •	This is to test Dijkstras’ Algorithm
