@@ -1,9 +1,10 @@
 Candidate: Quan-Ha Le. 
 
 A.	How to setup
-•	Python 3.7 for CentOS 7.5 on Amazon Web Services (AWS)
-•	I am using the Python language version of JUnit by Kent Beck and Erich Gamma - that is the Python unit testing framework.
-•	My GITHUB link for the Kiwiland Railroad is
+
++	Python 3.7 for CentOS 7.5 on Amazon Web Services (AWS)
++	I am using the Python language version of JUnit by Kent Beck and Erich Gamma - that is the Python unit testing framework.
++	My GITHUB link for the Kiwiland Railroad is
 https://github.com/lequanha/Kiwiland
 
 The AMI that I used to deploy my CentOS ec2 instance is 
@@ -14,17 +15,17 @@ You can use the MS Word and PDF files inside this package to see all the screens
 
 
 B.	How to deploy
-•	From inside your putty session, please make a GIT CLONE
++	From inside your putty session, please make a GIT CLONE
 git clone https://github.com/lequanha/Kiwiland.git
 
 This screenshot is inside QuanHaLe_documentation.doc and QuanHaLe_documentation.pdf
  
-•	Please use this statement to list the content
++	Please use this statement to list the content
 ls -LRl
 
 This screenshot is inside QuanHaLe_documentation.doc and QuanHaLe_documentation.pdf
 
-•	Please use the available MS Word and/or PDF files for your guidelines
++	Please use the available MS Word and/or PDF files for your guidelines
 QuanHaLe_documentation.doc
 QuanHaLe_documentation.pdf
 
@@ -36,30 +37,17 @@ python3.7 -m unittest
 The CentOS console will show 
 
 The route A-B-C has the distance of 9.0
-.
 The route A-D has the distance of 5.0
-.
 The route A-D-C has the distance of 13.0
-.
 The route A-E-B-C-D has the distance of 22.0
-.
 A-E-D: NO SUCH ROUTE
-.
 The number of possible trips from C to C with maximum of 3 stops are: 2
-.
 The number of possible trips from A to C with exact 4 stops are: 3
-.
 The shortest route from A to C is: ABC with distance 9.0
-.
 The shortest route from B to B is: BCEB with distance 9.0
-.
 The number of possible trips from C to C with maximum distance of 30 are: 7
-.
-----------------------------------------------------------------------
 Ran 10 tests in 0.002s
-
 OK
-
 
 This screenshot is inside QuanHaLe_documentation.doc and QuanHaLe_documentation.pdf 
 
@@ -81,13 +69,13 @@ my_routes.get_number_of_possible_trips_to_maximum_distance("C", "C", 30)
 This screenshot is inside QuanHaLe_documentation.doc and QuanHaLe_documentation.pdf 
  
 Other unit tests that I have also set up
-•	This is to test Dijkstras’ Algorithm
++	This is to test Dijkstras’ Algorithm
 python3.7 -m unittest tests.dijkstrasmodule
  
-•	This is to test the get_distance method
++	This is to test the get_distance method
 python3.7 -m unittest tests.getdistancemodule
  
-•	This is to test the get_number_of_possible_trips method and the get_number_of_possible_trips_to_maximum_distance method
++	This is to test the get_number_of_possible_trips method and the get_number_of_possible_trips_to_maximum_distance method
 python3.7 -m unittest tests.gettripsnumbermodule
 
 D.	Technical implementation
