@@ -54,7 +54,7 @@ def suite():
     Gather all the Insight Global tests from this module in a test suite.
     """
     test_suite = unittest.TestSuite()
-    test_suite.addTest(unittest.makeSuite(InsightGlobalTest))
+    test_suite.addTest(unittest.makeSuite(ReceptivitiTest))
     return test_suite
 
 if __name__ == '__main__':
