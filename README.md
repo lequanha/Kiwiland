@@ -1,7 +1,5 @@
-# Kiwiland
-Kiwiland Railroad service
-
 Candidate: Quan-Ha Le. 
+
 A.	How to setup
 •	Python 3.7 for CentOS 7.5 on Amazon Web Services (AWS)
 •	I am using the Python language version of JUnit by Kent Beck and Erich Gamma - that is the Python unit testing framework.
@@ -10,16 +8,21 @@ https://github.com/lequanha/Kiwiland
 
 The AMI that I used to deploy my CentOS ec2 instance is 
 CentOS-7-x86_64-EBS-HVM-20180318_121109-877e76fd-a132-410c-9982-c70ca8e41d88-ami-f5cb0388.4 (ami-7d579d00)
-
 From the above AMI, I installed Python 3.7 for CentOS 7.5, the steps please refer to the file inside my GITHUB:    Python3forCentOS.txt
+
+You can use the MS Word and PDF files inside this package to see all the screenshots
 
 
 B.	How to deploy
 •	From inside your putty session, please make a GIT CLONE
-# git clone https://github.com/lequanha/Kiwiland.git
+git clone https://github.com/lequanha/Kiwiland.git
+
+This creenshot is inside QuanHaLe_documentation.doc and QuanHaLe_documentation.pdf
  
 •	Please use this statement to list the content
-# ls -LRl
+ls -LRl
+
+This creenshot is inside QuanHaLe_documentation.doc and QuanHaLe_documentation.pdf
 
 •	Please use the available MS Word and/or PDF files for your guidelines
 QuanHaLe_documentation.doc
@@ -27,8 +30,8 @@ QuanHaLe_documentation.pdf
 
 C.	How to execute
 To run the 10 tests provided by Receptivti, please execute
-# cd Kiwiland
-# python3.7 -m unittest
+cd Kiwiland
+python3.7 -m unittest
 ######################################################
 The route A-B-C has the distance of 9.0
 .
@@ -56,6 +59,7 @@ Ran 10 tests in 0.002s
 OK
 ######################################################
 
+This creenshot is inside QuanHaLe_documentation.doc and QuanHaLe_documentation.pdf 
 
 The default test set’s outputs above are the tests required by Receptiviti company.
 To run interactively, execute `python3.7 -i` in the ‘Kiwiland' directory.  You can then enter below commands
@@ -68,38 +72,33 @@ my_routes.get_distance("A-E-B-C-D")
 my_routes.get_distance("A-E-D")
 my_routes.get_number_of_possible_trips("C", "C", 3, my_routes.TripType.max_stops)
 my_routes .get_number_of_possible_trips("A", "C", 4, my_routes.TripType.exact_stops)
- 
 my_routes.get_shortest_distance("A", "C")
 my_routes.get_shortest_distance("B", "B")
 my_routes.get_number_of_possible_trips_to_maximum_distance("C", "C", 30)
 
+This creenshot is inside QuanHaLe_documentation.doc and QuanHaLe_documentation.pdf 
  
 Other unit tests that I have also set up
 •	This is to test Dijkstras’ Algorithm
-# python3.7 -m unittest tests.dijkstrasmodule
+python3.7 -m unittest tests.dijkstrasmodule
  
 •	This is to test the get_distance method
-# python3.7 -m unittest tests.getdistancemodule
+python3.7 -m unittest tests.getdistancemodule
  
-
 •	This is to test the get_number_of_possible_trips method and the get_number_of_possible_trips_to_maximum_distance method
-# python3.7 -m unittest tests.gettripsnumbermodule
-
- 
-  
+python3.7 -m unittest tests.gettripsnumbermodule
 
 D.	Technical implementation
-
 1.	I implement on Python the Dijkstra’s Algorithm
 Dijkstra's Algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, railroad networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.
 The algorithm exists in many variants; Dijkstra's original variant found the shortest path between two nodes, but I would like to apply the most common variant fixes each single node as the "start" node and finds shortest paths from the start node to all other reachable nodes in the graph, producing a shortest-path dictionary.
 The source code for Dijkstra’s Algorithm is \Kiwiland\src\dijkstras.py
 Let the node at which we are starting be called the start node. Let the distance of node Y be the distance from the initial node to Y. Dijkstra's algorithm will assign some initial distance values and will try to improve them step by step.
+
 Step 1.	Create a set named visit_nodes and loop through all the nodes, initialize the visit_nodes with the start node only.
 Step 2.	Loop through the unvisited nodes inside the visit_nodes set
 Step 3.	          Take a next_node
 Step 4.	          Append all neighbour nodes of the above next_node into the visit_nodes set and calculate or re- update the distances from the start node to each neighbour node.
-
 Step 5.	          Store the minimum route inside the previous_nodes list
 Step 6.	          Store the minimum distance inside the shortest_routes list
 Step 7.	End Loop when you already visited all the visit_nodes  set and you have no more reachable nodes to add into the visit_nodes set.
@@ -123,7 +122,7 @@ I apply TestSuite and this is the default 10 tests required by Receptiviti compa
 10. The number of different routes from C to C with a distance of less than 30.
 
 Test Input: Graph: AB5, BC4, CD8, DC8, DE6, AD5, CE2, EB3, AE7
-This input is stored inside this file \Kiwiland\tests\__init__.py, if you want to change the graph input of all tests, please change this line inside \Kiwiland\tests\__init__.py
+This input is stored inside this file \Kiwiland\tests\ __init__.py, if you want to change the graph input of all tests, please change this line inside \Kiwiland\tests\ __init__.py
 
 Kiwiland = Railroad("AB5, BC4, CD8, DC8, DE6, AD5, CE2, EB3, AE7")
 
